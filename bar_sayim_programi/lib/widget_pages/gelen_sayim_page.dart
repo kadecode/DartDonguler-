@@ -1,9 +1,7 @@
-// Gelen malların geçmiş kayıtları açık olan gelecekleri tapik sayfası 
-// Gelen yada gelecek olan malları farklı bir renkle beliremek gerek 
-// Not olanları bir icon olarak not olduğu göstermek gerek
-
-
 import 'package:flutter/material.dart';
+// Gelen malların geçmiş kayıtları açık olan gelecekleri tapik sayfası
+// Gelen yada gelecek olan malları farklı bir renkle beliremek gerek
+// Not olanları bir icon olarak not olduğu göstermek gerek
 
 class MalKabulPageWidget extends StatelessWidget {
   const MalKabulPageWidget({Key? key}) : super(key: key);
@@ -19,4 +17,4 @@ class MalKabulPageWidget extends StatelessWidget {
     );
   }
 }
-// Buraya tasarımdaki gibi yapılacak fonsiyonel olarak tasarımdaki gibi çalışacak 
+// Buraya tasarımdaki gibi yapılacak fonsiyonel olarak tasarımdaki gibi çalışacak

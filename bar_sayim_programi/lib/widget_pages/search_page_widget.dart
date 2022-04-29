@@ -48,6 +48,7 @@ class MyDelegate extends SearchDelegate {
       },
       icon: const Icon(Icons.clear),
     );
+    return null;
   }
 
   @override

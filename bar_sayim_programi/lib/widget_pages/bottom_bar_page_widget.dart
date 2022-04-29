@@ -1,3 +1,4 @@
+import 'package:bar_sayim_programi/constants/const_ui.dart';
 import 'package:bar_sayim_programi/widget_pages/main_home_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -33,16 +34,27 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        bottomNavigationBar: bottomNavigationWidget(), body: screans[_index]);
+        extendBody: true,
+        bottomNavigationBar: Padding(
+          padding: const EdgeInsets.all(1.0),
+          child: ClipRRect(
+              borderRadius: BorderRadius.circular(22.0),
+              child: bottomNavigationWidget()),
+        ),
+        body: screans[_index]);
   }
 
   BottomNavigationBar bottomNavigationWidget() {
     return BottomNavigationBar(
+      backgroundColor: ConstUi.mainBlack,
+      unselectedItemColor: ConstUi.darkGray,
       type: BottomNavigationBarType.fixed,
       selectedFontSize: 18,
+      elevation: 4,
       showUnselectedLabels: false,
       selectedLabelStyle: const TextStyle(fontWeight: FontWeight.w300),
-      selectedIconTheme: const IconThemeData(color: Colors.orange, size: 26),
+      selectedIconTheme:
+          const IconThemeData(color: ConstUi.iconColor, size: 26),
       currentIndex: _index,
       onTap: (iconIndex) {
         setState(() {

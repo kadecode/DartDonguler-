@@ -1,7 +1,6 @@
-
-
 import 'package:flutter/material.dart';
 
+import 'constants/const_ui.dart';
 import 'widget_pages/welcome_page_widget.dart';
 
 void main() => runApp(const BarCost());
@@ -11,10 +10,15 @@ class BarCost extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Material App',
-      home:WelcomePage(),
+      color: ConstUi.scaffolColor,
+      theme: ThemeData(
+        backgroundColor: ConstUi.scaffolColor,
+        shadowColor: Colors.blue,
+      ),
+      title: 'Tip Box',
+      home: const WelcomePage(),
     );
   }
 }
